@@ -5,8 +5,28 @@
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* soluzione con inline-block */
+/* .card {
+    width: calc(100% / 3 - 3px);
+    display: inline-block;
+} */
+
+
+/* soluzione con il float */
+.card {
+    width: calc(100% / 3);
+    float: left;
 }
 
 
@@ -15,6 +35,12 @@
 /* debug */
 
 .debug .container {
-    height: 600px;
+    height: 800px;
     background-color: pink;
+}
+
+.debug .card {
+    height: 400px;
+    background-color: violet;
+    border: 1px solid black;
 }
