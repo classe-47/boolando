@@ -29,18 +29,65 @@
     float: left;
 }
 
+.card-image {
+    position: relative;
+}
+
+.card .card-image img {
+    width: 100%;
+}
+
+.card-image .heart {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: #fff;
+    font-size: 26px;
+    padding: 10px 15px;
+}
 
 
+
+.card-image .card-tag {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+
+.card-tag span {
+    padding: 5px 10px;
+    color: white;
+}
+
+.card-tag .discount {
+    background-color: red;
+}
+
+
+.card-tag .eco {
+    background-color: green;
+}
 
 /* debug */
 
-.debug .container {
+/* .debug .container {
     height: 800px;
     background-color: pink;
-}
+} */
 
-.debug .card {
+/* .debug .card {
     height: 400px;
     background-color: violet;
     border: 1px solid black;
 }
+
+.debug .card-image {
+    height: 350px;
+    background-color: yellow;
+} */
+/* 
+.debug .card-text {
+    height: 50px;
+    background-color: lightblue;
+} */
